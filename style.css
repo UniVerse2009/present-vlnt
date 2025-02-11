@@ -1,0 +1,96 @@
+body {
+    
+}
+
+p {
+  font-family: cursive;
+  font-size: clamp(20px, 5vw, 50px);
+}
+
+#text0 {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  font-size: 5vw;
+}
+
+#text1 {
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  font-size: 5vw;
+}
+
+#text2 {
+  position: absolute;
+  top: 47.5%;
+  left: 72.5%;
+  color: #FB8190FF;
+  transform-origin: 0 0;
+  transform: rotate(-30deg);
+  animation: button_idle 0.5s forwards ease-in-out infinite alternate;
+  font-size: 5vw;
+}
+
+#text2:active {
+  
+}
+
+div {
+  box-shadow: 10px 10px 15px red;
+  width: 50vh;
+  aspect-ratio: 5/4;
+  background-image: url("valentine_bg_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes button_idle {
+  from {
+    transform: scale(1.0) rotate(-30deg);
+  }
+  to {
+    transform: scale(0.9) rotate(-30deg);
+  }
+}
+
+@keyframes button_click {
+  from {
+    transform: scale(1.0) rotate(-30deg);
+  }
+  to {
+    transform: scale(0.8) rotate(-30deg);
+  }
+}
+
+.bounce {
+    display: inline-block;
+    animation: bounceEffect 0.6s ease-out;
+}
+
+@keyframes bounceEffect {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-10px); }
+    60% { transform: translateY(5px); }
+    100% { transform: translateY(0); }
+}
+
+#img {
+  position: absolute;
+  transform-origin: 0 0;
+  
+  /* Menyesuaikan scale berdasarkan rasio layar */
+  transform: scale(0.2);
+
+  /* Menyesuaikan posisi berdasarkan rasio layar */
+  top: -7.5%;
+  left: -2.5%;
+}
